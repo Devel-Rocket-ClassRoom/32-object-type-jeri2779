@@ -86,11 +86,6 @@ class Potion : Item
     }
     //요구 출력문은 슬롯 1: Weapon { Name = 불꽃 검, Price = 500, Damage = 25 } [Weapon]
     //그러나 실제 출력문은  슬롯:1 Weapon Name = Weapon: 불꽃 검, Price: 500, Damage: 25 [Weapon]
-    //Name = 과  불꽃 검 사이에 Weapon이 붙어서 나온다
-    //해당 원인파악이 필요함
-    //임시조치로 Tostring의 return값에서 Weapon과 Item 제거 하여 요구 출력문에 맟춤
-    //요구 사항중에 Tostring에 대한 상세 요구는 없었기에 큰 문제가 되지 않을것으로 판단함
-    //추가 수정 부분
     //Tostring을 {{ Name = {Name}, Price = {Price}, Damage = {Damage} }} 로 변경함
     //Name = 을 별도로 출력하려 했던게 문제였음. Name 부분도 Tostring에서만 출력하도록 했어야 했음.
 
