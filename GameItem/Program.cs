@@ -47,7 +47,7 @@ class Weapon : Item
 class Potion : Item
 {
     public int HealAmount;
-    public override string ToString()
+    public override string ToString()//Tostring 재정의 이용.
     {
         return $"{{ Name ={Name}, Price = {Price}, HealAmount = {HealAmount}}}";
     }
