@@ -50,7 +50,7 @@ int intCount = 0,
     stringCount = 0, 
     boolCount = 0;
 
-foreach (var item in data)
+foreach (var item in data)//type 체크
 {
        switch (item.GetType().Name)
     {
